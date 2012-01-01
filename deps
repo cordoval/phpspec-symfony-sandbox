@@ -58,3 +58,7 @@
     git=http://github.com/symfony/AsseticBundle.git
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.1
+
+[PHPSpecBundle]
+    git=http://github.com/phpspec/PHPSpecBundle.git
+    target=../src/PHPSpec/PHPSpecBundle
