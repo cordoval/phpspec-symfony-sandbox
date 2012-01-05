@@ -1,0 +1,1 @@
+phpspec src/PHPSpec/PHPSpecBundle/Spec -b -c
