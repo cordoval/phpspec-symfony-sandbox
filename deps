@@ -1,6 +1,6 @@
 [symfony]
-    git=http://github.com/symfony/symfony.git
-
+    git=git@github.com:cordoval/symfony.git
+    version=origin/featureWebSpec
 [twig]
     git=http://github.com/fabpot/Twig.git
     version=origin/master
