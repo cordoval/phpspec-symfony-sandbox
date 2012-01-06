@@ -1,1 +1,1 @@
-phpspec src/PHPSpec/PHPSpecBundle/Spec -b -c
+phpspec vendor/bundles/PHPSpec/PHPSpecBundle/Spec -b -c

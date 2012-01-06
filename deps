@@ -67,6 +67,5 @@
     version=origin/master
 
 [PHPSpecBundle]
-    git=http://github.com/cordoval/PHPSpecBundle-1.git
+    git=git@github.com:cordoval/PHPSpecBundle-1.git
     target=/bundles/PHPSpec/PHPSpecBundle
-    varsion=origin/master
