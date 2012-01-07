@@ -70,6 +70,6 @@
     git=git@github.com:cordoval/PHPSpecBundle-1.git
     target=/bundles/PHPSpec/PHPSpecBundle
 
-[PHPSpec]
+[phpspec]
     git=git@github.com:cordoval/phpspec.git
     version=origin/develop
