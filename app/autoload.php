@@ -15,7 +15,7 @@ $loader->registerNamespaces(array(
     'Monolog'          => __DIR__.'/../vendor/monolog/src',
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
-    'PHPSpec'          => __DIR__.'/../vendor/bundles',
+    'PHPSpec'          => array(__DIR__.'/../vendor/phpspec/src', __DIR__.'/../vendor/bundles'),
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
