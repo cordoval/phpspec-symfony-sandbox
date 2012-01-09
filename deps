@@ -73,3 +73,7 @@
 [phpspec]
     git=git@github.com:cordoval/phpspec.git
     version=origin/develop
+
+[phpspec-mocks]
+    git=git@github.com:cordoval/phpspec-mocks.git
+    version=origin/develop
