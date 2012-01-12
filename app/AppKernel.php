@@ -30,6 +30,18 @@ class AppKernel extends Kernel
         return $bundles;
     }
 
+    /**
+     * @return string
+     */
+    protected function getContainerBaseClass()
+    {
+        if ('test' == $this->environment) {
+            return '\PSS\Bundle\MockeryBundle\DependencyInjection\MockerContainer';
+        }
+
+        return parent::getContainerBaseClass();
+    }
+
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');

@@ -77,3 +77,7 @@
 [phpspec-mocks]
     git=git@github.com:cordoval/phpspec-mocks.git
     version=origin/develop
+
+[PSSMockeryBundle]
+    git=git@github.com:cordoval/PSSMockeryBundle.git
+    target=/bundles/PSS/Bundle/MockeryBundle
