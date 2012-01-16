@@ -4,6 +4,7 @@ namespace Acme\DemoBundle\Spec\Model;
 
 use Symfony\Bundle\FrameworkBundle\Spec\WebSpec;
 use Acme\DemoBundle\Model\MyService;
+use Twig_LoaderInterface as ClassA;
 
 class DescribeMyService extends WebSpec
 {
@@ -30,10 +31,16 @@ class DescribeMyService extends WebSpec
     }
 
     /**
-     * 2nd more functional approach to speck MyService
+     * 2nd more functional approach to speck MyService with real services
      */
     public function itShouldRunCommandOnClient()
     {
-
+        $twigEnvironmentMock = $this->container->mockInheriting('twig','Twig_Environment');
+        $test = $this->mock('ClassA','name1');
+        var_dump($test);
+        die(get_class($test));
+        die(get_class($this->container->get('twig')));
+        //$twigEnvironmentMock->
+        $this->serviceUnderSpec->methodUsingRouter()->should->be('http://specsf2.local/app_dev.php');
     }
 }

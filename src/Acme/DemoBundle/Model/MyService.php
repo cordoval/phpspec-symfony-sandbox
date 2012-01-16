@@ -14,7 +14,12 @@ class MyService
     public function methodUsingFileSystem()
     {
         $filesystem = $this->container->get('filesystem');
-        $filesystem->mkdir('folder1');
         return $filesystem->mkdir('folder1');
+    }
+
+    public function methodUsingRouter()
+    {
+        $router = $this->container->get('router');
+        return $router->generate('_welcome');
     }
 }
