@@ -22,4 +22,9 @@ class MyService
         $router = $this->container->get('router');
         return $router->generate('_welcome');
     }
+
+    public function checkInternalResponse()
+    {
+        return true;
+    }
 }
