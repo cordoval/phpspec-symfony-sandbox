@@ -2,11 +2,11 @@
 
 namespace Acme\DemoBundle\Spec\Model;
 
-use Symfony\Bundle\FrameworkBundle\Spec\WebSpec;
+use PHPSpec\PHPSpecBundle\Support\WebContext;
 use Acme\DemoBundle\Model\MyService;
 use Twig_Environment;
 
-class DescribeMyService extends WebSpec
+class DescribeMyService extends WebContext
 {
     protected $container;
     protected $client;
